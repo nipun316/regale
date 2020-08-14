@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>articleforreal</title>
+	<script>
+    
+
+	</script>
+	<style type="text/css">
+	html{
+		height: 100%;
+	}
+	   
+		
+
+
+	   body{
+		    margin: auto;
+			width: 1000px;
+			font-family:sans-serif ;
+			font-style: italic;
+			font-size: 30px;
+			color:black;
+			text-shadow: 2px 2px white;
+			background:#e3e3e3;
+			
+			
+		
+			
+			
+
+			
+
+		}
+		#heading{
+			padding:center;
+			color: white;
+			padding-top: 50px;
+			background-image: url( {{article.theme}})  ;
+			
+			text-shadow: 3px 3px black;
+			background-size: 100% ;
+			height: 500px;
+			width: 1000px;
+			background-position: center;
+			
+		
+		}
+		a{ padding-left: 370px;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			text-decoration: none;
+			height: 40px;
+			width: 190px;
+			border-radius: 30px;
+			color:black;
+		}
+		header{
+			height: 200px;
+			width:800px;
+			
+		}
+
+		#hey{
+			padding-left: 350px;
+		}
+		#chandler{
+			text-align: end;
+			padding-top: 100px;
+			font-size: 50px;
+		}
+		#joey{
+			text-align: center;
+			font-size: 70px;
+		}
+		#article{
+			font-size: 50px;
+		}
+
+
+	</style>
+</head>
+<body id="body" >
+	<header id="heading" >
+		<h1 id="joey">{{article.title.upper()}}</h1>
+        <h3 id="chandler">created by {{article.username}} </h3>
+        
+        
+
+	</header>
+	
+	<p><div id="article">
+		{{article.article}}
+	</div></p>
+
+<br>
+<a target="_blank" href="https://www.instagram.com/{{writer.instausername}}"><div style="text-decoration: none;"></div><img style="width: 80px; height: 80px;" src="../static/images/instagramlogo.png" > follow on instagram</div></a>
+<a target=_blank href="mailto:{{writer.email}}"><img src="../static/images/gmaillogo.png"style=" width: 80px; height: 80px;"</a>
+<br>
+
+
+
+
+</body>
+</html>

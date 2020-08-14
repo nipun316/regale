@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>login</title>
+	<style type="text/css">
+		#box{
+			
+			
+			
+		    background-image: url(' ../static/images/validcredentials.png');
+			
+
+			background-size: 100% ;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+		}
+		body{
+
+			
+			background-color: #e3e3e3;
+			width: auto;
+			height: 600px;
+		}
+		#login{
+			border-radius: 25px;
+			background: white;
+			width:200px;
+			height: 50px;
+			border: none;
+		}
+		#center{
+			padding-left: 100px;
+		}
+		#submit{
+			border: none;
+			width: 100px;
+			height: 50px;
+		}
+		#bla{
+			color: red;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<h1 id="center">LOGIN </h1>
+		<h3 id="bla">ENTER VALID CREDENTIALS</h3>
+		<div class="input">
+			<form action="checklogin" method="post">
+			<p><label  for="login"><h3>Username:</h3></label></p>
+			<p><input id="login"  type="text" name="username"></p>
+			<p><label for="password"><h3>Password:</h3></label></p>
+			<p><input id="login" type="password" name="password"></p>
+			<p><input id="submit" type="submit" name="" value="LOGIN"></p>
+		</form>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>feeder</title>
+	<style type="text/css">
+	.header{
+		height:200px;
+		text-align: center;
+		background: #1abc9c;
+		color: white;
+		font-size: 30px;
+		padding-right:10px;
+		
+	}
+	body{
+		
+		width: 350px;
+		background: #e3e3e3;
+	}
+	li{
+		display: inline;
+		padding: 10px;
+		font-size: 20px;
+	}
+	a{
+		text-decoration: none;
+	}
+	ul{
+		padding-top: 30px;
+	}
+	#user{
+		    padding: 10px;
+		    padding-left: 50px;
+			border-radius: 25px;
+			background: grey;
+			width:200px;
+			height: 60px;
+			border: 2px solid white;
+		}
+		#smoke{
+			padding-left: 200px;
+			padding-top: 60px;
+		}
+
+
+	</style>
+	<script type="text/javascript">
+		
+
+
+	</script>
+</head>
+<body>
+	
+	<div class="header">
+		<a id="smoke"  href="settings.html"><img src="../static/images/settings.png"  style="width:40px; height: 40px;"></a>
+		<ul>
+			<li><a style="color: black;" href="feeder.html">Articles</a></li>
+			<li><a style="color: whitesmoke;" href="about.html">About</a></li>
+			<li><a style="color: whitesmoke;" href="create.html">Create</a></li>
+			<li><a style="color: whitesmoke;" href="report.html">report</a></li>
+			<li><a style="color: whitesmoke;" href="{{url_for('logout')}}">logout</a></li>
+			
+
+		</ul>
+	</div>
+	<div>
+		
+			<div >
+
+			{% for item in post|reverse %}
+			
+			<a href="article/{{item.slug}}">
+			<h1 style="color:black;font-style:italic;font-family:sans-serif;text-shadow:2px 2px white;">{{item.title.upper()}}</h1>
+			<p><h4 style="color:grey;font-style:italic;font-family:sans-serif;text-shadow:2px 2px white">created by {{item.username}} on {{item.date}} </h4></p>
+			
+			<h3 style="color:white;font-style:italic;font-family:sans-serif;text-shadow:2px 2px black">{{item.article[0:25]}}.....</h3>
+			
+           
+			</a>
+			{% endfor %}
+			</div>
+
+
+		</a>
+    
+	
+
+		
+	</div>
+
+
+
+
+
+
+</body>
+</html>

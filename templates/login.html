@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		#box{
+			
+			
+			background-image: url(' ../static/images/login.png');
+			height: 600px;
+			background-size: 100%;
+			
+			
+			
+			background-repeat: no-repeat;
+
+		}
+		#login{
+			border-radius: 25px;
+			background: white;
+			width:200px;
+			height: 50px;
+			border: none;
+		}
+		#center{
+			padding-left: 60px;
+		}
+		#submit{
+			border: none;
+			width: 100px;
+			height: 50px;
+		
+		}
+		body{
+			color: white;
+			margin: auto;
+			padding-top: 20px;
+			background-color: #e3e3e3;
+
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<h1 id="center">LOGIN </h1>
+		<div class="input">
+			<form id="u1" action="checklogin" method="post">
+			<p><label  for="login"><h2>Username:</h2></label></p>
+			<p><input id="login"  type="text" name="username"></p>
+			<p><label for="password"><h2>Password:</h2></label></p>
+			<p><input id="login" type="password" name="password"></p>
+			<p style="padding-left: 30px;"><input id="submit" type="submit" name="" value="LOGIN"></p>
+			<a style="color: black; font-family: sans-serif; font-style: italic; text-decoration: none;" href="createaccount.html"><h3>Do not have an account-sign up</h3></a>
+		</form>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>

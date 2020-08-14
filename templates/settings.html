@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>settings</title>
+	<style type="text/css">
+		body{
+			margin: auto;
+			width: 600px;
+			height: 700px;
+		    background: #1abc9c;
+		    border: 2px solid black;
+		    border-radius: 25px;
+		}
+	</style>
+</head>
+<body >
+
+	<div  style="width: 300px;height: 300px; border: black 2px; border-radius: 4px;padding-top: 40px;" id="box1">
+		<h1 style="position: center; padding-left: 100px; color: white">SETTINGS</h1>
+    
+    	<hr >
+	<form action="addinstagram" method='post'>
+        <label for="instagram"><h3>ADD INSTAGRAM ACCOUNT</h3></label>
+        <h3>instagram username:</h3>
+		<input style="border: 2px solid black; border-radius: 25px;" id="instagram" type="text" name="instagram" required>
+        <label for="pass"><h3>ENTER YOUR PASSWORD</h3></label>
+        
+		<input style="border: 2px solid black; border-radius: 25px;" type="password" id="pass" name="pass" required>
+		<br>
+		<br>
+		<input style="border-radius: 30px; text-decoration: none; font-family: sans-serif; font-style: italic;" type="submit" value="add/change">
+	</form>
+    <hr>
+    <form style="border-radius: 2px solid black" action="addmailid" method='post'>
+        <label for="emailid"><h3>CHANGE EMAIL ACCOUNT</h3></label>
+        <h3>your emailid:</h3>
+		<input style="border: 2px solid black; border-radius: 25px;" id="emailid" type="email" name="emailid" required>
+		<label for="pass"><h3>ENTER YOUR PASSWORD</h3></label>
+		<input style="border: 2px solid black; border-radius: 25px;" type="password" id="pass" name="pass" required>
+		<br><br>
+		<input style="border-radius: 30px; text-decoration: none; font-family: sans-serif; font-style: italic;" type="submit" value="add/change">
+	</form>
+    
+
+
+
+
+<hr>
+
+
+</body>
+</html>

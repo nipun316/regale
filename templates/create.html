@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>createhere</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+	<style type="text/css">
+	#box{
+		margin:auto;
+		border:2px solid black;
+		width: 375px;
+		height:auto;
+		background: #1abc9c;
+	}
+	#cret{
+		padding-left: 25px;
+
+	}
+	#article{
+		width:350px;
+		height:400px;
+		
+
+	}
+	#yo{
+		    font-size: large;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			
+			height: 40px;
+			width: 190px;
+			border-radius: 30px;
+		}
+		#arthur{
+			float: left;
+		
+
+		}
+
+
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	<div id="box">
+		<h1 id="cret">CREATE HERE</h1>
+		<form id="myform" action="article" method="post">
+			
+		<label  for="articlename"><h4>NAME OF THE ARTICLE:<h4></label>
+		<input id="articlename" type="text" name="articlename" placeholder="name of the article" required>
+		<label for="article"><h4>ARTICLE:</h4></label>
+		<textarea  id="article" name="article"  placeholder="create article here" title="your article " required></textarea>
+		<p><h3 style="color:whitesmoke">SELECT YOUR GENRE:</h3></p>
+		<div id="tommy">
+		<input id="romance" type="radio" name="theme" required value="../static/images/romance.png">
+		<label for="romance">ROMANCE</label><br>
+		<input id="society" type="radio" name="theme" value="../static/images/society.png">
+		<label for="society">SOCIETY</label><br>
+		<input id="motivation" type="radio" name="theme" value="../static/images/motivation.png">
+		<label for="motivation">MOTIVATION</label><br>
+		<input id="story" type="radio" name="theme" value="../static/images/story.png">
+		<label for="story">STORY</label><br>
+		<input id="other" type="radio" name="theme" value="../static/images/lifestyle.png">
+		<label for="other">LIFESTYLE</label>
+		<input id="other" type="radio" name="theme" value="../static/images/food.png">
+		<label for="other">FOOD</label>
+		<input id="other" type="radio" name="theme" value="../static/images/culture.png">
+		<label for="other">CULTURE</label>
+		<input id="other" type="radio" name="theme" value="../static/images/techonology.png">
+		<label for="other">TECHONOLOGY</label>
+		<input id="other" type="radio" name="theme" value="../static/images/other.png">
+		<label for="other">OTHER</label>
+
+
+			</div>
+			<h2 style="color:red">TRY NEW</h2>
+		<div id="arthur">
+			
+		<input id="other" type="radio" name="theme" value="../static/images/televisionseries.png">
+		<label for="other">TELEVISION-SERIES</label>
+		<input id="other" type="radio" name="theme" value="../static/images/politics.png">
+		<label for="other">POLITICS</label>
+		<input id="other" type="radio" name="theme" value="../static/images/cinemas.png">
+		<label for="other">CINEMA</label>
+		<input id="other" type="radio" name="theme" value="../static/images/adventure.png">
+		<label for="other">ADVENTURE</label>
+		<input id="other" type="radio" name="theme" value="../static/images/currentaffairs.png">
+		<label for="other">CURRENT AFFAIRS</label>
+		<input id="other" type="radio" name="theme" value="../static/images/tavels.png.jpg">
+		<label for="other">TRAVEL</label>
+
+
+		</div>
+		<br><br>
+		<input id="yo" type="submit" onclick="writeit()" value="PREVIEW">
+		<br>
+		<br>
+		<a  style="color: white; text-decoration: none;  " href="feeder.html">RETURN HOME</a>
+	    </form>
+
+		
+		
+		
+	</div>
+
+
+</body>
+</html>

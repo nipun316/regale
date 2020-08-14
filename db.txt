@@ -1,0 +1,36 @@
+app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost/flaskapp"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=True
+db=SQLAlchemy(app)
+
+class User(db.Model):
+    username = db.Column(db.String(80), unique=True, nullable=False),
+    password = db.Column(db.String(80), unique=False, nullable=False)
+
+
+
+
+
+
+
+def writetofile(data):
+	username=data["username"]
+	password=data["password"]
+	entry=User(username=username,password=password)
+	db.session.add(entry)
+	db.session.commit()
+
+		
+
+
+
+@app.route('/login',methods=['POST','GET'])
+def login():
+	if request.method=='POST':
+		data=request.form.to_dict()
+		if data["check"]==data["password"]:
+			writetofile(data)
+			return render_template('login.html')
+		else:
+			return render_template('createaccount.html')
+

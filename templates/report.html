@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>report</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body{
+			margin:auto;
+			background: black;
+			
+
+
+		}
+		#box{
+			
+			border:2px solid black;
+			width:600px;
+			height:1200px;
+			background: #1abc9c;
+			color: white;
+		}
+		#username{
+			height: 50px;
+			width:200px;
+		}
+		#report{
+			height: 800px;
+			width: 600px;
+		
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="box">
+		<form id="report" action="report" method="post">
+		<h1 style="font-style: italic; font-family: sans-serif;">enter username:</h1>
+		<input id="username" placeholder="name of the user" type="text" name="user">
+		<h1 style="font-style: italic; font-family: sans-serif;">The reason for report:</h1>
+		<textarea style="width: 100px;height: 100px;" name="reason" placeholder="reason for report"></textarea>
+		<p><input style="border:black 3px; color:black;font-family: sans-serif;font-style: italic; " type="submit" value="submit report" name=""></p>
+	</form>
+
+		
+
+	</div>
+
+</body>
+</html>

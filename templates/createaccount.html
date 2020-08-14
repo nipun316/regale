@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>createaccount</title>
+	<style type="text/css">
+		#box{
+			
+			
+			
+			
+	
+			background-color: #e3e3e3;
+			background-image:  url('../static/images/newyork.png');
+			background-size: 100% 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			
+			
+			
+
+		}
+		#login{
+			border-radius: 25px;
+			background: white;
+			width:150px;
+			height: 50px;
+			border: 2px solid black;
+		}
+
+		#submit{
+			border: none;
+			width: 100px;
+			height: 50px;
+		}
+		a{
+			text-decoration: none;
+			color: grey;
+
+		}
+		body{
+			
+			color: white;
+			height: 900px;
+			width:375px;
+		}
+		
+
+	</style>
+</head>
+<body >
+	<div id="box">
+		<h2 id="center">CREATE ACCOUNT </h2>
+		<div class="input">
+			<form action="login" method="post">
+			<p><label  for="login"><h3>email:</h3></label></p>
+			<p><input id="login"  type="email" name="email" required></p>
+			<p><label  for="login"><h3>Instagram username(recommended)</h3></label></p>
+			<p><input id="login"  type="text" name="instausername"></p>
+			<p><label  for="login"><h3>Username:</h3></label></p>
+			<p><input id="login"  type="text" name="username"required></p>
+			<p><label for="password"><h3>Password:</h3></label></p>
+			<p><input id="login" type="password" name="check" pattern=".{8,}" title="password must contain 8 or more characters" required></p>
+			<p><label for="login"><h3>Confirm Password:</h3></label></p>
+			<p><input id="login" type="password" name="password"required></p>
+			<p><input id="submit" type="submit" name="" value="LOGIN"></p>
+			</form>
+			<p><h2><a href="login.html">already have an account:sighn in</a></h2></p>
+
+		
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>
